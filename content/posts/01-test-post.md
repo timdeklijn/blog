@@ -4,7 +4,6 @@ date: 2020-07-17T12:46:22+02:00
 draft: true
 ---
 
-
 What happens when I put code at the top?
 
 ``` python
@@ -20,7 +19,7 @@ This is some random content. For how long should I type until it is not on the f
 
 This is some random content. For how long should I type until it is not on the frontpage anymore? This is what I want to know. It looks like it takes quite some time until the text falls of the frontpage. So let me copy this paragraph a few times.
 
-And of course the big question is: 'How wel can we render code?'. The answer is here:
+And of course the big question is: 'How we can we render code?'. The answer is here:
 
 ``` python
 import os

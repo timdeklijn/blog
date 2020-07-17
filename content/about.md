@@ -8,14 +8,14 @@ This is about me.
 
 ## Skills
 
-- Python
-- Machine Learning
-- Deep Learning
-- R
-- Cloud (Azure, AWS, GCP)
-- SQL
-- Javascript (vue.js, d3.js)
-- Go
+* Python
+* Machine Learning
+* Deep Learning
+* R
+* Cloud (Azure, AWS, GCP)
+* SQL
+* Javascript (vue.js, d3.js)
+* Go
 
 ### **2018 - now:** Data Science @ Sogeti
 
