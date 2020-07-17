@@ -1,0 +1,6 @@
+[submodule "hugo-paper"]
+	path = hugo-paper
+	url = https://github.com/nanxiaobei/hugo-paper/
+[submodule "themes/hugo-coder"]
+	path = themes/hugo-coder
+	url = https://github.com/luizdepra/hugo-coder.git
