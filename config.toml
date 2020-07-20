@@ -35,15 +35,21 @@ disqusShortname = "yourdiscussshortname"
 
 # Social links
 [[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin fa-2x"
+    weight = 1
+    url = "https://www.linkedin.com/in/tim-de-klijn-5bb772133"
+[[params.social]]
     name = "Github"
     icon = "fab fa-github fa-2x"
-    weight = 1
+    weight = 2
     url = "https://github.com/timdeklijn/"
 [[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter fa-2x"
     weight = 3
     url = "https://twitter.com/timdeklijn/"
+
 
 # Menu links
 [[menu.main]]
@@ -54,3 +60,29 @@ disqusShortname = "yourdiscussshortname"
     name = "About"
     weight = 2
     url = "/about/"
+[[menu.main]]
+    name = "Resume"
+    weight = 3
+    url = "/resume/"
+
+[deployment]
+order = [".jpg$", ".gif$"]
+
+[[deployment.targets]]
+name = "gcp-deployment"
+URL = "gs://blog-bucket-283906"
+
+[[deployment.matchers]]
+#  Cache static assets for 1 year.
+pattern = "^.+\\.(js|css|svg|ttf)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(png|jpg)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = false
+
+[[deployment.matchers]]
+pattern = "^.+\\.(html|xml|json)$"
+gzip = true
