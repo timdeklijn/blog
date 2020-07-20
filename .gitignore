@@ -1,0 +1,7 @@
+public/
+deployment/*tfvars
+deployment/.terraform/
+deployment/*.plan
+deployment/*.json
+deployment/*.tfstate
+deployment/*.tfstate.backup
