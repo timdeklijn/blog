@@ -11,12 +11,12 @@ pygmentsstyle = "github"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "yourdiscussshortname"
+disqusShortname = ""
 
 [params]
     author = "Tim de Klijn"
     info = "Data Scientist/Engineer"
-    description = "John Doe's personal website"
+    description = "Tim de Klijn's personal website"
     keywords = "blog,developer,personal,Data Science,data engineering"
     avatarurl = "images/avatar.jpg"
 
