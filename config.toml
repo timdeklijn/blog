@@ -15,7 +15,7 @@ disqusShortname = ""
 
 [params]
     author = "Tim de Klijn"
-    info = "Data Scientist/Engineer"
+    info = "Data Scientist/Data Engineer"
     description = "Tim de Klijn's personal website"
     keywords = "blog,developer,personal,Data Science,data engineering"
     avatarurl = ""

@@ -23,7 +23,7 @@ development.
 ## Installing Hugo
 
 On MacOS, Hugo can be installed using [homebrew](https://brew.sh/). In the terminal the following commands downloads and
-install Hugo:
+installs Hugo:
 
 ``` sh
 brew install hugo
@@ -39,8 +39,8 @@ initial framework of a website called 'blog':
 hugo new site blog
 ```
 
-Then a theme can be found on a [theme gallery](https://themes.gohugo.io/). Generally, on the theme website there is a
-good explanation on how to install the theme for a hugo website. It will be something like:
+A theme can be found on a [theme gallery](https://themes.gohugo.io/). Generally, on the theme website there is a good 
+explanation on how to install the theme for a hugo website. It will be something like the following:
 
 ``` sh
 cd blog
@@ -48,24 +48,31 @@ git init
 git submodule add <theme-repository> themes/<theme-name>
 ```
 
-Since each themae has a different configuration and setup, the easiest way to apply the theme is to copy `theme.toml`
+Since each theme has a different configuration and setup, the easiest way to apply the theme is to copy `theme.toml`
 from the `themes` folder to `config.toml` in the main folder of the project.
 
 ``` shell script
 cp themes/theme.toml config.toml
 ```
 
-Add a new post
+A new post can be added by manually creating a Markdown file, but an faster solution is to use the following command:
 
 ``` sh
 hugo new posts/<name-of-post>.md
 ```
 
-When done editing the posts, run the following command to build the website:
+This ensures that a header containing metadata is added to the Markdown file. Notice the `draft = true` flag. This
+signals hugo to not include this markdown file into the build that will be published. It will however be visible in
+a development server.
+
+When the post is finished, run the following command to build the website and run a development server:
 
 ``` sh
 hugo server -D
 ```
+
+The development server show all files that are in the `content` folder of your blog, also files with `draft` set to 
+`true`. When making changes to files the server will rebuild the website on save. 
 
 If the site looks good enough to be published, close the server using `CTRL-C`.
 
