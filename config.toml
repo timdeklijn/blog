@@ -1,4 +1,4 @@
-baseurl = "http://www.example.com"
+baseurl = "https://timdeklijn.github.io/"
 title = "Tim de Klijn"
 theme = "hugo-coder"
 languagecode = "en"
@@ -7,7 +7,7 @@ defaultcontentlanguage = "en"
 paginate = 20
 canonifyurls = true
 
-pygmentsstyle = "github"
+pygmentsstyle = "default"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
@@ -18,7 +18,7 @@ disqusShortname = ""
     info = "Data Scientist/Engineer"
     description = "Tim de Klijn's personal website"
     keywords = "blog,developer,personal,Data Science,data engineering"
-    avatarurl = "images/avatar.jpg"
+    avatarurl = ""
 
     favicon_32 = "/img/favicon-32x32.png"
     favicon_16 = "/img/favicon-16x16.png"
@@ -32,6 +32,8 @@ disqusShortname = ""
 
     math = true
     custom_css = ["css/custom.css"]
+
+    colorscheme = "dark"
 
 # Social links
 [[params.social]]
@@ -58,31 +60,9 @@ disqusShortname = ""
     url  = "/posts/"
 [[menu.main]]
     name = "About"
-    weight = 2
+    weight = 1
     url = "/about/"
 [[menu.main]]
     name = "Resume"
-    weight = 3
+    weight = 1
     url = "/resume/"
-
-[deployment]
-order = [".jpg$", ".gif$"]
-
-[[deployment.targets]]
-name = "gcp-deployment"
-URL = "gs://blog-bucket-283906"
-
-[[deployment.matchers]]
-#  Cache static assets for 1 year.
-pattern = "^.+\\.(js|css|svg|ttf)$"
-cacheControl = "max-age=31536000, no-transform, public"
-gzip = true
-
-[[deployment.matchers]]
-pattern = "^.+\\.(png|jpg)$"
-cacheControl = "max-age=31536000, no-transform, public"
-gzip = false
-
-[[deployment.matchers]]
-pattern = "^.+\\.(html|xml|json)$"
-gzip = true
