@@ -52,7 +52,7 @@ Since each theme has a different configuration and setup, the easiest way to app
 from the `themes` folder to `config.toml` in the main folder of the project.
 
 ``` shell script
-cp themes/theme.toml config.toml
+cp themes/exampleSite/config.toml config.toml
 ```
 
 A new post can be added by manually creating a Markdown file, but an faster solution is to use the following command:
